@@ -1,0 +1,12 @@
+start,2,,,,
+view,black,fadeout,0,,
+back,black,0.5,0,,
+text,char1,名前,100,100,
+view,black,fadein,3,,
+wait,1,,,,
+text,char1,名前,100,100,あああああああああああああああああああああああああああああああああああああああああああ
+wait,2,,,,
+text,char1,名前,100,100,以上でテスト終了です
+wait,1,,,,
+view,black,fadeout,2,,
+end,,,,,
