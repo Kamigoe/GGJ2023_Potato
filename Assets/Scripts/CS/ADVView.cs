@@ -46,6 +46,12 @@ public class ADVView : MonoBehaviour
 
     public void Init()
     {
+        foreach (var (id, img) in _chars)
+        {
+            Destroy(img.gameObject);
+        }
+        _chars.Clear();
+
         _waitHitKey = false;
         _hitKey = false;
         _textBox1.alpha = 0;
@@ -81,7 +87,7 @@ public class ADVView : MonoBehaviour
     public IEnumerator View(string color, string type, float dulation)
     {
         var col = color == "black" ? 0f: 1f;
-        var start = type == "fadein" ? 1f : 0f;
+        var start = type == "fadein" ? 0f : 1f;
         var end = 1 - start;
 
         if (dulation > 0)
@@ -131,7 +137,11 @@ public class ADVView : MonoBehaviour
             {
                 image = _chars[name];
             }
-            image.sprite = Resources.Load<Sprite>($"ADV/Textures/{path}");
+            if (path != "")
+            {
+                image.sprite = Resources.Load<Sprite>($"ADV/Textures/{path}");
+                image.SetNativeSize();
+            }
             var rect = (RectTransform)image.transform;
             rect.localPosition = new Vector2(x, y);
 

@@ -1566,7 +1566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _view: {fileID: 579605482}
-  _test: stage0_end
+  _test: stage1_start
 --- !u!4 &2120375980
 Transform:
   m_ObjectHideFlags: 0

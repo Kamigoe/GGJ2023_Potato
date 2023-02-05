@@ -1,0 +1,10 @@
+start,2,,,,
+view,black,fadeout,0.5,,
+back,black,0.5,,,
+text,char1,じゃがいも,100,100,ここが工場…？見たことのない機械がたくさんあるな…
+wait,1,,,,
+view,black,fadein,0.5,,
+start,1,,,,
+view,black,fadeout,0.5,,
+text,char1,じゃがいも,100,100,ここにも毒芋たちが…！うまく避けて、早く仲間のところに行かなきゃ…
+wait,1,,,,

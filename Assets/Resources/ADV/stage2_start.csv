@@ -1,0 +1,11 @@
+start,2,,,,
+view,black,fadeout,0.5,,
+back,black,0.5,,,
+text,char1,じゃがいも,100,100,あれ？ここはもしかして…じゃがいも畑！？戻ってこれたんだ！
+wait,1,,,,
+text,char1,じゃがいも,100,100,早く仲間を見つけて合流しなくっちゃ！
+wait,1,,,,
+view,black,fadein,0.5,,
+start,1,,,,
+view,black,fadeout,0.5,,
+text,char1,じゃがいも,100,100,畑にもたくさんの天敵が…油断大敵だね！
